@@ -64,7 +64,7 @@ nav li a {
     margin-top: 0.3rem;
 }
 
-/* Hero,video styling */
+/* Hero,video,image styling */
 .overlay .title h1 {
     color: var(--white);
     font-family: 'Montserrat';
@@ -89,6 +89,15 @@ video {
     position: relative;
     height: 40rem;
     width: 100%;
+}
+.parallax {
+    height: 40rem;
+    background-image: url("media/sunflowers2.jpg");
+    background-image: url("media/sunflowers2.jpg"), rgba(66, 39, 22, 0.55);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .overlay {
     position: absolute;
