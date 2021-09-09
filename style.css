@@ -1,0 +1,178 @@
+body {
+    --gold: #E9B136;
+    --orange: #CE891E;
+    --brown: #6D4F38;
+    --dark-brown: #422716;
+    --green: #807F40;
+    --dark-green: #716d3c;
+    --white: #ffffff;
+    --black: #000000;
+}
+@font-face {
+    font-family: Pecita;
+    src: url(fonts/Pecita.otf);
+}
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+body{
+    margin: 0;
+}
+
+/* nav bar styling */
+nav {
+    width: 100%;
+    background: linear-gradient(180deg, #CE891E 0%, #DFA32E 100%);
+    margin: 0 !important;
+    box-shadow: 0px 3px 7px 3px rgba(66, 39, 22, 0.63);
+    z-index: 1;
+    position: relative;
+}
+ul {
+    list-style: none;
+    display: inline;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+}
+nav li{
+    display: inline;
+    padding: 0 0.5rem;
+}
+nav li a {
+    color: var(--white) !important;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+.center-nav {
+    text-align: center;
+}
+.center-nav li{
+    font-family: 'Pecita';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;    
+    color: var(--dark-brown);
+}
+.right-nav {
+    text-align: right;
+    margin-top: 0.3rem;
+}
+
+/* Hero,video styling */
+.overlay .title h1 {
+    color: var(--white);
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    text-align: center;
+    margin: 3rem;
+}
+.overlay .title hr {
+    width: 11rem;
+    border-top: 1px solid var(--white);
+}
+.overlay .title {
+    margin-top: 14rem;
+}
+video {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: 50% 29%;
+}
+.hero-container {
+    position: relative;
+    height: 40rem;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 39, 22, 0.55);
+}
+
+/* Content section */
+.content {
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+    z-index: 1;
+}
+.wrapper {
+    overflow: hidden;
+    position: relative;
+}
+.first, .second, .third {
+    margin-bottom: 3rem;
+}
+h2 {
+    color: var(--dark-green) !important;
+    font-family: 'Pecita';
+    font-style: normal;
+    font-weight: normal;
+} 
+.content p {
+    color: var(--black);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.link a{
+    color: var(--orange) !important;
+}
+.link a:hover {
+    color: var(--gold) !important;
+}
+
+/* geometric graphics in content section*/
+.right-triangle, .left-triangle {
+    width: 0;
+    height: 0;
+    border-left: 22rem solid transparent;
+    border-right: 22rem solid transparent;
+    position: absolute;
+    bottom: 0px;
+    z-index: -1;
+}
+.right-triangle {
+    border-bottom: 37.7rem solid var(--green);
+    left: 75%;
+}
+.left-triangle {
+    border-top: 37.7rem solid var(--dark-green);
+    right: 77%;
+}
+.right-line {
+    position: absolute;
+    border-top: 2px solid var(--dark-brown);
+    bottom: 30%;
+    width: 35%;
+    right: -8%;
+    transform: rotate(53deg);
+}
+.left-line {
+    position: absolute;
+    border-top: 2px solid var(--dark-brown);
+    bottom: 69%;
+    width: 20%;
+    left: 2%;
+    transform: rotate(51deg);
+}
+
+
+/* phone and tablet styles only */
+@media screen and (max-width: 1024px) {
+    .content {
+        max-width: 90%;
+    }
+    .left-line, .right-line, .left-triangle, .right-triangle {
+        display: none;
+    }
+}
