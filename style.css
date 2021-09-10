@@ -87,13 +87,12 @@ video {
 }
 .hero-container {
     position: relative;
-    height: 40rem;
+    height: 30rem;
     width: 100%;
 }
 .parallax {
-    height: 40rem;
-    background-image: url("media/sunflowers2.jpg");
-    background-image: url("media/sunflowers2.jpg"), rgba(66, 39, 22, 0.55);
+    background: rgba(66, 39, 22, 0.55);
+    background: linear-gradient( rgba(66, 39, 22, 0.55) 100%, rgba(66, 39, 22, 0.55) 100%), url('media/sunflowers2.jpg') ;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
