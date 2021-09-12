@@ -133,7 +133,7 @@
                 <p>Doctors want assurance that they are not missing important details during medical examinations and procedures. Current methods of reporting inlude dictations, typing or writing notes by hand.</p>
                 <p>This web app allows doctors to quickly and easily record observations via interactive features such as radio buttons, checkboxes and sliders. It acts like a digital checklist for their exams. Two written reports will automatically be generated, saving time with reporting: one report with medical jargon for the benefit of the doctor and other health care practitioners, the other for the patient. </p>
                 <p>ExpressJS | ReactJS | PostgreSQL | JWT</p>
-                <iframe width="420" height="315" allowfullscreen class="project-video"
+                <iframe width="420" height="315" class="project-video"
                     src="https://www.youtube.com/embed/L-_8wXBzsvs">
                 </iframe>
             </div>
@@ -142,7 +142,40 @@
     </div>
     <!--Medical Info Reporting Modal end-->
 
+    <!--Video Recommender Modal start-->
+    <div class="modal fade" id="videos" tabindex="-1" role="dialog" aria-labelledby="videos-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Educational Video Recommender</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>This research project is meant to develop a personalized recommender system for YouTube videos as a supplementary tool for university students to use to help them learn important classroom concepts.</p>
+                <p>The system initially collects and ranks YouTube videos on educational classroom topics and displays them to students. Once students using the system interact with the displayed videos by liking and disliking the videos, the system combines the user history with collaborative filtering to produce a personalized list of recommended YouTube videos. </p>
+                <p>Since the focus of the project was the recommending algorithm, little time was spent on the UI or website performance. A copy of the final research report has been linked below.</p>
+                <p>Python | Laravel | YouTube API</p>
+                <div class="scroll-container">
+                    <div class="project-scroller">
+                        <a target="_blank" href="media/VideoRecommenderProject/Home.png"><img class="screenshot" height="60px" width="100px" src="media/VideoRecommenderProject/Home.png" alt="screenshot home page showing many videos listed in rows sorted by topic"/></a>
+                        <a target="_blank" href="media/VideoRecommenderProject/topic.png"><img class="screenshot" height="60px" width="100px" src="media/VideoRecommenderProject/topic.png" alt="screenshot of a specific topic and its videos"/></a>
+                        <a target="_blank" href="media/VideoRecommenderProject/my videos.png"><img class="screenshot" height="60px" width="100px" src="media/VideoRecommenderProject/my videos.png" alt="screenshot of a user's saved videos"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <p><span class="link"><a target="_blank" href="https://github.com/marlieer/ubco-videos">Github repo</a></span></p>
+                <p><span class="link"><a target="_blank" href="http://ubco-videos.herokuapp.com/">Go to demo</a></span></p>
+                <p><span class="link"><a target="_blank" href="media/VideoRecommenderProject/Honours in Computer Science.pdf">Honours Thesis report</a></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Video Recommender Modal end-->
     <!-- Project modals end -->
+
     <!-- User flow modals start -->
 
     <!-- User flow modals end -->
@@ -194,9 +227,9 @@
                 <!-- UBCO Videos -->
                 <article class="project">
                     <h2>Educational Video Recommender</h2>
-                    <p>An independant research project, built with Python and Laravel</p>
+                    <p>An honours thesis research project, built with Python and Laravel</p>
                     <p>This web app gathers and ranks educational YouTube videos for classroom use. It re-ranks videos accomodating classroom user likes and dislikes</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
+                    <p><span class="link"><a href="javascript:void(0)" data-toggle="modal" data-target="#videos">More details</a></span></p>
                 </article>
             </div>
         </div>
@@ -306,27 +339,6 @@
                     <h2>Lightweight searchbar in navbar</h2>
                     <p>Objective: design a lightweight search bar that can fit in the unused space of the navbar.</p>
                     <p>This flow allows users to use Homecare Hub's search engine anywhere on the site. Modelled after Airbnb's search bar, it allows the user to toggle their search between services with various filters.</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
-                </article>
-                <!-- Health and Safety Dashboard -->
-                <article class="project">
-                    <h2>Health and Safety Dashboard</h2>
-                    <p>An independant project, built with Laravel, Full Calendar plugin and Microsoft OAuth integration</p>
-                    <p>This web app helps staff at School District 27 create digital Health & Safety forms that can be assigned to staff or sites with recurring deadlines to complete.</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
-                </article>
-                <!-- Medical Information Reporting -->
-                <article class="project">
-                    <h2>Medical Information Reporting</h2>
-                    <p>A group project, built with ExpressJS, ReactJS and JWT for authentication</p>
-                    <p>This web app assists doctors and health care providers save time reporting on procedures and examinations by producing text narratives from the results.</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
-                </article>
-                <!-- UBCO Videos -->
-                <article class="project">
-                    <h2>Educational Video Recommender</h2>
-                    <p>An independant research project, built with Python and Laravel</p>
-                    <p>This web app gathers and ranks educational YouTube videos for classroom use. It re-ranks videos accomodating classroom user likes and dislikes</p>
                     <p><span class="link"><a href="#">More details</a></span></p>
                 </article>
             </div>

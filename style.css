@@ -178,6 +178,7 @@ h2 {
 /* projects section */
 section.project-section{
     margin: 1rem;
+    margin-bottom: 7rem;
 }
 .scroll-container {
     overflow-x: auto;
