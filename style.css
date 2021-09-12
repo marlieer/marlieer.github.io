@@ -102,7 +102,7 @@ video {
     background: linear-gradient( rgba(66, 39, 22, 0.55) 100%, rgba(66, 39, 22, 0.55) 100%), url(media/sunflowers2.jpg) no-repeat fixed 50% -10rem/cover;
 }
 .ux-parallax {
-    background: linear-gradient( rgba(66, 39, 22, 0.55) 100%, rgba(66, 39, 22, 0.55) 100%), url(media/sunflowers1.jpg) no-repeat fixed left 18rem/cover;
+    background: linear-gradient( rgba(66, 39, 22, 0.55) 100%, rgba(66, 39, 22, 0.55) 100%), url(media/sunflowers1.jpg) no-repeat fixed left 0rem/cover;
 }
 .overlay {
     position: absolute;
@@ -229,6 +229,33 @@ section.project-section{
   .scroll-container::-webkit-scrollbar-thumb:hover {
     background: var(--dark-green); 
   }
+
+  /* Static Pages section */
+  .website {
+    width: 17rem;
+    display: inline-table;
+    padding: 0 2rem;
+    height: 13rem;
+    position: relative;
+  }
+  .logo {
+      width: 11rem;
+      height: 10rem;
+      border-radius: 8px;
+      margin-bottom: 0.7rem;
+      object-fit: cover;
+  }
+  .logo-container {
+      text-align: center;
+  }
+  .project-scroller .website + .website {
+    border-left: 1px solid var(--green);
+    }
+  .websites-section h2 {
+    text-align: center;
+    margin: 3rem 0 -3rem 0;
+  }
+
 
 
 /* phone and tablet styles only */
