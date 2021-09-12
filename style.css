@@ -231,6 +231,9 @@ section.project-section{
   }
 
   /* Static Pages section */
+  section.websites-section {
+      margin: 1rem;
+  }
   .website {
     width: 17rem;
     display: inline-table;
@@ -244,6 +247,7 @@ section.project-section{
       border-radius: 8px;
       margin-bottom: 0.7rem;
       object-fit: cover;
+      filter: grayscale(0.3);
   }
   .logo-container {
       text-align: center;
@@ -251,11 +255,54 @@ section.project-section{
   .project-scroller .website + .website {
     border-left: 1px solid var(--green);
     }
-  .websites-section h2 {
+  .websites-section h2, .userflows-section h2 {
     text-align: center;
     margin: 3rem 0 -3rem 0;
   }
 
+  /* User flows section */
+  .userflows-section{
+    margin: 1rem;
+  }
+  .project h2 {
+    text-align: left;
+    margin: 0;
+  }
+
+
+  /* Project modals */
+  .modal-header {
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+  }
+  .modal-title {
+    color: var(--dark-green) !important;
+    font-family: 'Pecita';
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .modal-dialog {
+      max-width: 50rem !important;
+      margin: 4rem auto !important;
+  }
+  .modal-content {
+      padding: 1rem;
+  }
+  .modal-footer {
+    justify-content: space-around !important;
+    border-top: none !important;
+  }
+  .modal-body .scroll-container {
+      width: auto;
+  }
+  img.screenshot {
+    object-fit: cover;
+    height: 14rem;
+    width: 21rem;
+  }
 
 
 /* phone and tablet styles only */
