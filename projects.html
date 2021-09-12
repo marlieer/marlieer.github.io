@@ -54,6 +54,7 @@
         </div>
     </div>
     <!--HCH Care platform Modal end-->
+
     <!--Nature fun Modal start-->
     <div class="modal fade" id="naturefun" tabindex="-1" role="dialog" aria-labelledby="naturefun-modal" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -92,6 +93,54 @@
         </div>
     </div>
     <!--Nature fun Modal end-->
+    
+    <!--OHS Modal start-->
+    <div class="modal fade" id="ohs" tabindex="-1" role="dialog" aria-labelledby="ohs-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Health and Safety Dashboard</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>This web app helps admin at School District 27 create digital Health & Safety forms that can be assigned to staff or sites with recurring deadlines to complete.</p>
+                <p>There is flexibility to change form deadlines to be once or on a flexible recurring schedule. Administrators can assign each form to Microsoft Office365 user groups, individual users, or specific sites (for example, all elementary schools). Administrators can quickly run reports on schools and individuals who are overdue for deadlines and export results into Excel spreadsheets.</p>
+                <p>Users can login to the system using their school district Microsoft credentials, view a calendar with their upcoming or overdue deadlines and complete forms assigned to them. Principals can view all their upcoming deadlines, including deadlines for the school or site they are at.</p>
+                <p>PostgreSQL | Laravel | Microsoft OAuth integration | Full Calendar Plugin</p>
+                <p><strong>Screenshots and live demo are unavailable for privacy reasons.</strong></p>
+            </div>
+            <div class="modal-footer">
+                <p><span class="link"><a target="_blank" href="https://github.com/marlie-sd27/health-and-safety">Github repo</a></span></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--OHS Modal end-->
+
+    <!--Medical Info Reporting Modal start-->
+    <div class="modal fade" id="medreport" tabindex="-1" role="dialog" aria-labelledby="medreport-modal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Medical Information Reporting</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <p>Doctors want assurance that they are not missing important details during medical examinations and procedures. Current methods of reporting inlude dictations, typing or writing notes by hand.</p>
+                <p>This web app allows doctors to quickly and easily record observations via interactive features such as radio buttons, checkboxes and sliders. It acts like a digital checklist for their exams. Two written reports will automatically be generated, saving time with reporting: one report with medical jargon for the benefit of the doctor and other health care practitioners, the other for the patient. </p>
+                <p>ExpressJS | ReactJS | PostgreSQL | JWT</p>
+                <iframe width="420" height="315" allowfullscreen class="project-video"
+                    src="https://www.youtube.com/embed/L-_8wXBzsvs">
+                </iframe>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!--Medical Info Reporting Modal end-->
 
     <!-- Project modals end -->
     <!-- User flow modals start -->
@@ -133,14 +182,14 @@
                     <h2>Health and Safety Dashboard</h2>
                     <p>An independant project, built with Laravel, Full Calendar plugin and Microsoft OAuth integration</p>
                     <p>This web app helps staff at School District 27 create digital Health & Safety forms that can be assigned to staff or sites with recurring deadlines to complete.</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
+                    <p><span class="link"><a href="javascript:void(0)" data-toggle="modal" data-target="#ohs">More details</a></span></p>
                 </article>
                 <!-- Medical Information Reporting -->
                 <article class="project">
                     <h2>Medical Information Reporting</h2>
                     <p>A group project, built with ExpressJS, ReactJS and JWT for authentication</p>
                     <p>This web app assists doctors and health care providers save time reporting on procedures and examinations by producing text narratives from the results.</p>
-                    <p><span class="link"><a href="#">More details</a></span></p>
+                    <p><span class="link"><a href="javascript:void(0)" data-target="#medreport" data-toggle="modal">More details</a></span></p>
                 </article>
                 <!-- UBCO Videos -->
                 <article class="project">

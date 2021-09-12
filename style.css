@@ -181,7 +181,7 @@ section.project-section{
 }
 .scroll-container {
     overflow-x: auto;
-    width: 100vw;
+    width: 96vw;
 }
 .blurb {
     max-width: 27rem;
@@ -302,6 +302,10 @@ section.project-section{
     object-fit: cover;
     height: 14rem;
     width: 21rem;
+  }
+  iframe.project-video {
+    max-height: 26rem;
+    width: -webkit-fill-available;
   }
 
 
