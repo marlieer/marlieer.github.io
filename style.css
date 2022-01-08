@@ -123,7 +123,7 @@ video {
     margin: 2rem auto;
     z-index: 1;
 }
-.wrapper {
+.wrapper, .index-wrapper {
     overflow: hidden;
     position: relative;
 }
